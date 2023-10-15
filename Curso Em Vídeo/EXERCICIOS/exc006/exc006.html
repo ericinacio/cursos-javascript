@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="exc006.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <main>
+        <section>
+            <span>Numero (entre 1 e 100):</span>
+            <input type="number" name="txtn" id="txtn">
+            <button onclick="addNum()">Adicionar</button>
+        </section>
+        <section>
+            <select name="nlista" id="nlista" size="10">
+            </select>
+        </section>
+        <button onclick="fim()">Finalizar</button>
+        <section id="res">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Eric Inácio</p>
+    </footer>
+    <script src="exc006.js"></script>
+</body>
+</html>

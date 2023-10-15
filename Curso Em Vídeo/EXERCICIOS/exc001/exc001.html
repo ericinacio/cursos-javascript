@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro Ou Estrangeiro?</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    <input type="text" placeholder="Qual o Pais?" id="txtpais">
+    <button onclick="verificar()">Verificar</button>
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txtvalue = document.querySelector('#txtpais').value
+            var res = document.querySelector('#res')
+            if (txtvalue !== 'Brasil' ) {
+                res.innerHTML = `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>BRASILEIRO</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
